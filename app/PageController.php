@@ -30,7 +30,7 @@ class PageController
                 'base' => URL . URL_DIR,
                 'title' => ($this->page == "home" ? "" : $pages[$this->page] . " | ") . "Diamondwave",
                 'nav' => $nav,
-                'content' => file_get_contents(DATA_DIR . "$this->page.html")
+                'content' => file_get_contents(DATA_DIR . "$this->page.html"),
             ])
             ->render();
     }
